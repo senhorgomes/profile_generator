@@ -1,3 +1,7 @@
+const spinner = ['\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   ']
+const spinnerNewLine = spinner.push('\n');
+let timer = 100
+// Original code
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -18,8 +22,8 @@ rl.question('What\'s your name? Nicknames are also acceptable. ', (answer1) => {
           rl.question('What is your absolute favourite movie? ', (answer6) => {
             console.log(`Great choice ${answer1}, I heard ${answer6} is amazing.`);
             rl.question('What is your superpower? In a few words, tell us what you are amazing at ', (answer7) => {
-              console.log(`Thank you ${answer1}! ${answer7}, that sounds like a great skill to have!`);
-            
+              console.log(`Thank you ${answer1}! ${answer7}, that sounds like a great skill to have! \n`);
+              console.log(`${answer1} loves listening to ${answer3} while ${answer2}, devouring ${answer4} at ${answer5}, enjoys watching thier favourite movie ${answer6}, and is amazing at ${answer7}!`)
               rl.close();
             });
           });
