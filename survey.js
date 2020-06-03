@@ -1,6 +1,3 @@
-const spinner = ['\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   ']
-const spinnerNewLine = spinner.push('\n');
-let timer = 100
 // Original code
 const readline = require('readline');
 
